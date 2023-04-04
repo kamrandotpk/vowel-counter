@@ -1,5 +1,5 @@
 {
-    "name": "mkamranpk/vowel-counter",
+    "name": "kamrandotpk/vowel-counter",
     "description": "A composer package that counts the number of vowels in a given file or string",
     "type": "library",
     "require": {
