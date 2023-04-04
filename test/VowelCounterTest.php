@@ -16,6 +16,14 @@ class VowelCounterTest extends TestCase
         $this->assertEquals(0, $vowelCounter->countVowelsInFile($file));
     }
 
+    public function testEmptyFileContainsNoVowels(): void
+    {
+        $vowelCounter = new VowelCounter();
+        $file = new \SplTempFileObject();
+
+        $this->assertEquals(0, $vowelCounter->countVowelsInFile($file));
+    }
+
     public function testCountVowelsInFileObject(): void
     {
         $vowelCounter = new VowelCounter();
@@ -33,6 +41,14 @@ class VowelCounterTest extends TestCase
         $str = "There are 11 vowels in this sentence.";
 
         $this->assertEquals(11, $vowelCounter->countVowelsInAString($str));
+    }
+
+    public function testCountVowelsInAnEmptyString(): void
+    {
+        $vowelCounter = new VowelCounter();
+        $str = "";
+
+        $this->assertEquals(0, $vowelCounter->countVowelsInAString($str));
     }
     
 }
