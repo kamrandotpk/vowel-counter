@@ -6,6 +6,10 @@ class VowelCounter
 {
     const VOWELS = ['a', 'e', 'i', 'o', 'u'];
 
+    /**
+     * @param \SplFileObject $file
+     * @return int
+     */
     public function countVowelsInFile(\SplFileObject $file): int
     {
         $vowelCount = 0;
@@ -16,6 +20,10 @@ class VowelCounter
         return $vowelCount;
     }
 
+    /**
+     * @param string $text
+     * @return int
+     */
     public function countVowelsInAString(string $text): int
     {
         $vowelCount = 0;
