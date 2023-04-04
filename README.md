@@ -16,7 +16,7 @@ composer require kamrandotpk/vowel-counter
 require_once 'vendor/autoload.php';
 
 $vowelCounter = new \VowelCounter\VowelCounter();
-$text = "There are 10 vowels in this sentence.";
+$text = "There are 11 vowels in this sentence.";
 
 // count vowels in a file
 $file = new \SplTempFileObject();
