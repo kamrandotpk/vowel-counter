@@ -2,7 +2,13 @@
 
 This package allows you to count the vowels in a file or a string. 
 
-Example usage:
+### Installation:
+
+```
+composer require kamrandotpk/vowel-counter
+```
+
+### Example usage:
 
 ```php
 <?php
@@ -22,3 +28,5 @@ echo $vowelCounter->countVowelsInAString($text); // outputs 11
 ```
 
 Please see the included Unit Tests for more example usage.
+
+Composer Package URL: https://packagist.org/packages/kamrandotpk/vowel-counter
